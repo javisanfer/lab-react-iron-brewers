@@ -7,6 +7,10 @@ import RandomBeerPage from "./pages/RandomBeerPage";
 import AddBeerPage from "./pages/AddBeerPage";
 import BeerDetailsPage from "./pages/BeerDetailsPage";
 
+import AppRoutes from "./routes/AppRoutes";
+
+
+
 function App() {
   return (
     <div className="App">
@@ -18,8 +22,12 @@ function App() {
         <Route path="/new-beer" element={<AddBeerPage />} />
         <Route path="/beers/:beerId" element={<BeerDetailsPage />} />
       </Routes>
+
+      <Navbar />
+
+      <AppRoutes />
+
     </div>
   );
 }
-
 export default App;
